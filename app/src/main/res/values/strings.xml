@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TsyrevnikovaAV_PR-33_02</string>
+    <string name="convertor">Конвертер единиц информации</string>
+    <string name="enter_log">Введите логин</string>
+    <string name="enter_pass">Введите пароль</string>
+    <string name="choise"> Выбор единиц информации</string>
+    <string name="enter_num">Введите число</string>
+    <string name="from">Из</string>
+    <string name="to">B</string>
+    <string name="result">Результат</string>
+    <string name="entered_num">Введенное число</string>
+    <string name="error_empty_fields">Введите логин и пароль</string>
+    <string name="error_not_correct">Данные не совпадают</string>
+</resources>

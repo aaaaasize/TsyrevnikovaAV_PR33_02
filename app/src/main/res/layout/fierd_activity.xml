@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".FierdActivity"
+        android:background="@color/blue">
+
+    <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/convertor"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:id="@+id/entered_digit_tw"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="96dp"
+            android:layout_marginHorizontal="24dp"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/entered_num"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/entered_digit_tw"/>
+
+
+    <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <TextView
+                android:id="@+id/from_tw"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:layout_marginEnd="24dp"
+                android:layout_weight="1"
+                android:paddingBottom="8dp" />
+
+        <TextView
+                android:id="@+id/to_tw"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:layout_marginEnd="24dp"
+                android:layout_weight="1"
+                android:paddingBottom="8dp" />
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/result_tw"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/edit_text"
+            android:hint="@string/result"
+            android:textSize="24sp"
+            android:paddingStart="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <ImageButton
+            android:id="@+id/registration_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/registration_btn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/result_tw" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
